@@ -53,7 +53,8 @@ class Start extends React.Component {
   }
 
   openWhatsapp = async () => {
-    let url = 'whatsapp://app';
+    let url = 'https://api.whatsapp.com/app';
+    // let url = 'whatsapp://send?phone=3464478983';
     Linking.openURL(url).then((data) => {
       console.log('WhatsApp Opened');
     }).catch((err) => {
